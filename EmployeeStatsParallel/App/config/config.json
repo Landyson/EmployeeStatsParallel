@@ -1,0 +1,6 @@
+{
+    "inputFile": "data/employees.json",
+    "outputFile": "output/stats.json",
+    "workerCount": 4,
+    "ageBuckets": [ 25, 35, 45, 60 ]
+}
