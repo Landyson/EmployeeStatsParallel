@@ -13,6 +13,13 @@ namespace EmployeeStatsParallel.src.Config
         public string OutputFile { get; set; } = "output/stats.json";
         public int WorkerCount { get; set; } = 4;
         public List<int> AgeBuckets { get; set; } = new List<int> { 25, 35, 45, 60 };
+
+        public bool ShowBirthCountryStats { get; set; } = true;
+        public bool ShowCurrentCountryStats { get; set; } = true;
+        public bool ShowAgeBucketStats { get; set; } = true;
+        public bool ShowTopCountriesOfBirth { get; set; } = true;
+        public bool ShowTopCurrentCountries { get; set; } = true;
+        public bool ShowAverageAge { get; set; } = true;
     }
 
     public static class ConfigLoader

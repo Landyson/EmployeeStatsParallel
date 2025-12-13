@@ -1,13 +1,13 @@
 {
-  "TotalEmployees": 88,
+  "TotalEmployees": 90,
   "EmployeesByCountryOfBirth": {
     "Austria": 7,
     "Canada": 6,
     "Czech Republic": 7,
     "France": 8,
     "Germany": 9,
-    "Italy": 1,
-    "Japan": 15,
+    "Italy": 2,
+    "Japan": 16,
     "Netherlands": 10,
     "Poland": 3,
     "Slovakia": 3,
@@ -19,7 +19,7 @@
   },
   "EmployeesByCurrentCountry": {
     "Austria": 11,
-    "Canada": 5,
+    "Canada": 6,
     "Czech Republic": 9,
     "France": 5,
     "Germany": 12,
@@ -29,17 +29,17 @@
     "Poland": 3,
     "Slovakia": 1,
     "Spain": 6,
-    "Sweden": 8,
+    "Sweden": 9,
     "United Kingdom": 4,
     "United States": 8
   },
   "EmployeesByAgeBucket": {
     "0-25": 9,
     "26-35": 21,
-    "36-45": 24,
+    "36-45": 26,
     "46-60": 34
   },
-  "GeneratedAt": "2025-11-30T13:02:15.4166572Z",
+  "GeneratedAt": "2025-12-13T10:52:35.0409734Z",
   "TopCountriesOfBirth": [
     "Japan",
     "Netherlands",
@@ -50,5 +50,5 @@
     "Austria",
     "Czech Republic"
   ],
-  "AverageAge": 41.22727272727273
+  "AverageAge": 41.27777777777778
 }

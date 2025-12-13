@@ -2,5 +2,12 @@
     "inputFile": "data/employees.json",
     "outputFile": "output/stats.json",
     "workerCount": 4,
-    "ageBuckets": [ 25, 35, 45, 60 ]
+    "ageBuckets": [ 25, 35, 45, 60 ],
+
+    "showBirthCountryStats": true,
+    "showCurrentCountryStats": true,
+    "showAgeBucketStats": true,
+    "showTopCountriesOfBirth": true,
+    "showTopCurrentCountries": true,
+    "showAverageAge": true
 }

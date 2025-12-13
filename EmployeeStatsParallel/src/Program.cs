@@ -175,61 +175,66 @@ namespace EmployeeStatsParallel
             Console.WriteLine($"Total employees: {result.TotalEmployees}");
             Console.WriteLine();
 
-            Console.WriteLine("Employees by country of birth:");
-            foreach (var kv in result.EmployeesByCountryOfBirth.OrderByDescending(kv => kv.Value))
+            if (config.ShowBirthCountryStats)
             {
-                Console.WriteLine($"  {kv.Key}: {kv.Value}");
+                Console.WriteLine("Employees by country of birth:");
+                foreach (var kv in result.EmployeesByCountryOfBirth.OrderByDescending(kv => kv.Value))
+                    Console.WriteLine($"  {kv.Key}: {kv.Value}");
+                Console.WriteLine();
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Employees by current country:");
-            foreach (var kv in result.EmployeesByCurrentCountry.OrderByDescending(kv => kv.Value))
+            if (config.ShowCurrentCountryStats)
             {
-                Console.WriteLine($"  {kv.Key}: {kv.Value}");
+                Console.WriteLine("Employees by current country:");
+                foreach (var kv in result.EmployeesByCurrentCountry.OrderByDescending(kv => kv.Value))
+                    Console.WriteLine($"  {kv.Key}: {kv.Value}");
+                Console.WriteLine();
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Employees by age bucket:");
-            foreach (var kv in result.EmployeesByAgeBucket.OrderBy(kv => kv.Key))
+            if (config.ShowAgeBucketStats)
             {
-                Console.WriteLine($"  {kv.Key}: {kv.Value}");
+                Console.WriteLine("Employees by age bucket:");
+                foreach (var kv in result.EmployeesByAgeBucket.OrderBy(kv => kv.Key))
+                    Console.WriteLine($"  {kv.Key}: {kv.Value}");
+                Console.WriteLine();
             }
 
-            
-            Console.WriteLine();
-            Console.WriteLine("Top 3 countries of birth:");
-            if (result.TopCountriesOfBirth.Count == 0)
+            if (config.ShowTopCountriesOfBirth)
             {
-                Console.WriteLine("  (no data)");
-            }
-            else
-            {
-                foreach (var country in result.TopCountriesOfBirth)
+                Console.WriteLine("Top 3 countries of birth:");
+                if (result.TopCountriesOfBirth.Count == 0)
                 {
-                    Console.WriteLine($"  {country}");
+                    Console.WriteLine("  (no data)");
                 }
-            }
-
-            
-            Console.WriteLine();
-            Console.WriteLine("Top 3 current countries (where employees live):");
-            if (result.TopCurrentCountries.Count == 0)
-            {
-                Console.WriteLine("  (no data)");
-            }
-            else
-            {
-                foreach (var country in result.TopCurrentCountries)
+                else
                 {
-                    Console.WriteLine($"  {country}");
+                    foreach (var country in result.TopCountriesOfBirth)
+                        Console.WriteLine($"  {country}");
                 }
+                Console.WriteLine();
             }
 
-            
-            Console.WriteLine();
-            Console.WriteLine($"Average age: {result.AverageAge:F2}");
+            if (config.ShowTopCurrentCountries)
+            {
+                Console.WriteLine("Top 3 current countries (where employees live):");
+                if (result.TopCurrentCountries.Count == 0)
+                {
+                    Console.WriteLine("  (no data)");
+                }
+                else
+                {
+                    foreach (var country in result.TopCurrentCountries)
+                        Console.WriteLine($"  {country}");
+                }
+                Console.WriteLine();
+            }
 
-            Console.WriteLine();
+            if (config.ShowAverageAge)
+            {
+                Console.WriteLine($"Average age: {result.AverageAge:F2}");
+                Console.WriteLine();
+            }
+
             Console.WriteLine("Done. Press any key to exit.");
             Console.ReadKey();
         }
