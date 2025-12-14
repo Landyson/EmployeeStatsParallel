@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeStatsParallel", "EmployeeStatsParallel\EmployeeStatsParallel.csproj", "{FFEB8DBA-2C22-4AE2-9124-77607615AE7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeStatsParallel.Tests", "EmployeeStatsParallel.Tests\EmployeeStatsParallel.Tests.csproj", "{6DEF02F5-6168-470A-97AE-EC75E116F3DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FFEB8DBA-2C22-4AE2-9124-77607615AE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFEB8DBA-2C22-4AE2-9124-77607615AE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFEB8DBA-2C22-4AE2-9124-77607615AE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEF02F5-6168-470A-97AE-EC75E116F3DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEF02F5-6168-470A-97AE-EC75E116F3DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEF02F5-6168-470A-97AE-EC75E116F3DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEF02F5-6168-470A-97AE-EC75E116F3DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
